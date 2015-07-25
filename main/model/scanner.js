@@ -1,3 +1,5 @@
+var CartItem = require('./cart_item.js');
+
 function Scanner(scannerType) {
     this.type = scannerType;
 }

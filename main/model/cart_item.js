@@ -5,3 +5,5 @@ function CartItem(item, count) {
     this.discount = 0;
     this.save = 0;
 }
+
+module.exports = CartItem();
