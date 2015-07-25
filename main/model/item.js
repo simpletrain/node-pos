@@ -1,3 +1,6 @@
+var Fixtures = require('../fixtures.js');
+
+
 function Item(barcode, name, unit, price) {
     this.barcode = barcode;
     this.name = name;
@@ -6,7 +9,7 @@ function Item(barcode, name, unit, price) {
 }
 
 Item.all = function () {
-    return loadAllItems();
+    return Fixtures.loadAllItems();
 };
 
 Item.find = function (barcode) {

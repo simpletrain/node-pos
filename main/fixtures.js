@@ -1,4 +1,12 @@
-function loadAllItems() {
+var Item = require('./model/item.js');
+var Promotion = require('./model/promotion.js');
+
+function Fixtures(){
+
+}
+
+
+Fixtures.loadAllItems = function() {
     return [
         new Item('ITEM000000', '可口可乐', '瓶', 3.00),
         new Item('ITEM000001', '雪碧', '瓶', 3.00),
@@ -7,9 +15,9 @@ function loadAllItems() {
         new Item('ITEM000004', '电池', '个', 2.00),
         new Item('ITEM000005', '方便面', '袋', 4.50)
     ];
-}
+};
 
-function loadPromotions() {
+ Fixtures.loadPromotions = function() {
     return [
         new Promotion('BUY_TWO_GET_ONE_FREE', [
             'ITEM000000',
@@ -17,4 +25,6 @@ function loadPromotions() {
             'ITEM000005'
         ])
     ];
-}
+};
+
+module.exports = Fixtures();

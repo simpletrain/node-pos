@@ -1,3 +1,5 @@
+var Fixtures = require('../fixtures.js');
+
 function Promotion(type, barcodes) {
     this.type = type;
     this.barcodes = barcodes || [];
@@ -5,7 +7,7 @@ function Promotion(type, barcodes) {
 
 
 Promotion.all = function () {
-    return loadPromotions();
+    return Fixtures.loadPromotions();
 };
 
 module.exports = Promotion();
