@@ -1,5 +1,6 @@
 var Cart = require('./model/cart.js');
 var Pos = require('./model/pos.js');
+var Promotion = require('./model/promotion_processor.js');
 
 function printReceipt(tags) {
     var scanner = new Scanner('barcode');

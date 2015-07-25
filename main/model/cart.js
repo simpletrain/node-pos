@@ -1,3 +1,5 @@
+var Promotion = require('./promotion_processor.js');
+
 function Cart() {
     this.cartItems = [];
     this.globalType = PromotionProcessor.findGlobalType();

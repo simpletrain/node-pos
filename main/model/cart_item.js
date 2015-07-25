@@ -1,3 +1,5 @@
+var Promotion = require('./promotion_processor.js');
+
 function CartItem(item, count) {
     this.item = item;
     this.count = count || 1;
