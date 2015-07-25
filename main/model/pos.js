@@ -1,4 +1,4 @@
-
+var Receipt = require('./receipt.js');
 
 function Pos(scanner, cart) {
     this.scanner = scanner;

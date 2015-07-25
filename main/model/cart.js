@@ -1,4 +1,4 @@
-var Promotion = require('./promotion_processor.js');
+var PromotionProcessor = require('./promotion_processor.js');
 
 function Cart() {
     this.cartItems = [];
