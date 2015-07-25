@@ -1,3 +1,5 @@
+var Promotion = require('./promotion.js');
+
 function PromotionProcessor() {
 
 }
