@@ -1,3 +1,5 @@
+
+
 function Pos(scanner, cart) {
     this.scanner = scanner;
     this.cart = cart;
@@ -18,3 +20,5 @@ Pos.prototype.printReceipt = function () {
     var myReceipt = new Receipt(this.cart);
     return myReceipt.printString;
 };
+
+module.exports = Pos();
