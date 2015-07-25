@@ -27,3 +27,6 @@ Utils.formatPrice = function (price) {
 Utils.getSubTotal = function (count, price) {
     return count * price;
 };
+
+
+module.exports = Utils();

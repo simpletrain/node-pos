@@ -1,3 +1,5 @@
+var Utils = require('../utils.js');
+
 function Receipt(cart) {
     this.printString =
         '***<没钱赚商店>收据***\n' +
