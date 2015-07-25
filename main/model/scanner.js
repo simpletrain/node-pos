@@ -15,3 +15,5 @@ Scanner.prototype.scan = function (tag) {
         return new CartItem(item, count);
     }
 };
+
+module.exports = Scanner();
