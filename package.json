@@ -1,0 +1,20 @@
+{
+  "name": "node-pos",
+  "version": "2.0.0",
+  "description": "pos with nodeJS",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node ./main/main.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/simpletrain/node-pos.git"
+  },
+  "author": "ming",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/simpletrain/node-pos/issues"
+  },
+  "homepage": "https://github.com/simpletrain/node-pos#readme"
+}
