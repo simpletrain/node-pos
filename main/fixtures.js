@@ -1,5 +1,5 @@
-var Item = require('./model/item.js');
-var Promotion = require('./model/promotion.js');
+
+
 
 function Fixtures(){
 
@@ -7,6 +7,7 @@ function Fixtures(){
 
 
 Fixtures.loadAllItems = function() {
+    var Item = require('./model/item.js');
     return [
         new Item('ITEM000000', '可口可乐', '瓶', 3.00),
         new Item('ITEM000001', '雪碧', '瓶', 3.00),
@@ -18,6 +19,7 @@ Fixtures.loadAllItems = function() {
 };
 
  Fixtures.loadPromotions = function() {
+   var Promotion = require('./model/promotion.js');
     return [
         new Promotion('BUY_TWO_GET_ONE_FREE', [
             'ITEM000000',
@@ -27,4 +29,4 @@ Fixtures.loadAllItems = function() {
     ];
 };
 
-module.exports = Fixtures();
+module.exports = Fixtures;

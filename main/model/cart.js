@@ -29,4 +29,4 @@ Cart.prototype.findInCart = function (cartItem) {
     return -1;
 };
 
-module.exports = Cart();
+module.exports = Cart;

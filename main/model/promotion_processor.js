@@ -56,4 +56,4 @@ PromotionProcessor.CalculateGlobalPromotion = function (cart) {
 };
 
 
-module.exports = PromotionProcessor();
+module.exports = PromotionProcessor;

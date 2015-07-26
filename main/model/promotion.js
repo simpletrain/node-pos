@@ -10,4 +10,4 @@ Promotion.all = function () {
     return Fixtures.loadPromotions();
 };
 
-module.exports = Promotion();
+module.exports = Promotion;

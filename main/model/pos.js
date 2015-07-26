@@ -21,4 +21,4 @@ Pos.prototype.printReceipt = function () {
     return myReceipt.printString;
 };
 
-module.exports = Pos();
+module.exports = Pos;

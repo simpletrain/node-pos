@@ -8,4 +8,4 @@ function CartItem(item, count) {
     this.save = 0;
 }
 
-module.exports = CartItem();
+module.exports = CartItem;

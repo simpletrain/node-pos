@@ -16,4 +16,4 @@ Scanner.prototype.scan = function (tag) {
     }
 };
 
-module.exports = Scanner();
+module.exports = Scanner;

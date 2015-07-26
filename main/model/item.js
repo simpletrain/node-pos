@@ -26,4 +26,4 @@ Item.find = function (barcode) {
 
 };
 
-module.exports = Item();
+module.exports = Item;

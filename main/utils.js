@@ -29,4 +29,4 @@ Utils.getSubTotal = function (count, price) {
 };
 
 
-module.exports = Utils();
+module.exports = Utils;

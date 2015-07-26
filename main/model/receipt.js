@@ -59,4 +59,4 @@ Receipt.prototype.getPromotionString = function (cart) {
 };
 
 
-module.exports = Receipt();
+module.exports = Receipt;
