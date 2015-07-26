@@ -28,3 +28,5 @@ var tags = [
 ];
 
 printReceipt(tags);
+
+exports.printReceipt = printReceipt;
