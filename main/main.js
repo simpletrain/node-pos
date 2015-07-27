@@ -29,4 +29,4 @@ var tags = [
 
 printReceipt(tags);
 
-exports.printReceipt = printReceipt;
+module.exports = printReceipt;
