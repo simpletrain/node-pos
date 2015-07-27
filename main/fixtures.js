@@ -1,12 +1,4 @@
-
-
-
-function Fixtures(){
-
-}
-
-
-Fixtures.loadAllItems = function() {
+loadAllItems = function() {
     var Item = require('./model/item.js');
     return [
         new Item('ITEM000000', '可口可乐', '瓶', 3.00),
@@ -18,7 +10,7 @@ Fixtures.loadAllItems = function() {
     ];
 };
 
- Fixtures.loadPromotions = function() {
+loadPromotions = function() {
    var Promotion = require('./model/promotion.js');
     return [
         new Promotion('BUY_TWO_GET_ONE_FREE', [
@@ -29,4 +21,5 @@ Fixtures.loadAllItems = function() {
     ];
 };
 
-module.exports = Fixtures;
+exports.loadAllItems = loadAllItems;
+exports.loadPromotions = loadPromotions;

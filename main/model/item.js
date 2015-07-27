@@ -1,4 +1,4 @@
-var Fixtures = require('../fixtures.js');
+var fixtures = require('../fixtures.js');
 
 
 function Item(barcode, name, unit, price) {
@@ -9,7 +9,7 @@ function Item(barcode, name, unit, price) {
 }
 
 Item.all = function () {
-    return Fixtures.loadAllItems();
+    return fixtures.loadAllItems();
 };
 
 Item.find = function (barcode) {
