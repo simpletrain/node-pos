@@ -9,6 +9,7 @@ function printReceipt(tags) {
     var pos = new Pos(scanner, cart);
 
     pos.scan(tags);
+    
     PromotionProcessor.CalculatePromotion(cart);
 
     console.log(pos.printReceipt());

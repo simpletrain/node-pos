@@ -7,8 +7,6 @@ function Receipt(cart) {
         '----------------------\n' +
         this.getItemString(cart) +
         '----------------------\n' +
-        this.getPromotionString(cart) +
-        '----------------------\n' +
         '总计：' + Utils.formatPrice(this.getAmount(cart) - cart.save) + '(元)\n' +
         '节省：' + Utils.formatPrice(cart.save) + '(元)\n' +
         '**********************';
@@ -40,22 +38,6 @@ Receipt.prototype.getAmount = function (cart) {
     });
 
     return amount;
-};
-
-
-Receipt.prototype.getPromotionString = function (cart) {
-    var promotionString = '挥泪赠送商品：\n';
-
-    cart.cartItems.forEach(function (cartItem) {
-        if (cartItem.save !== 0) {
-            var item = cartItem.item;
-            promotionString +=
-                '名称：' + item.name +
-                '，数量：' + cartItem.discount + item.unit + '\n';
-        }
-    });
-
-    return promotionString;
 };
 
 
