@@ -5,13 +5,13 @@ var Scanner = require('./model/scanner.js');
 
 function printReceipt(tags) {
     var scanner = new Scanner('barcode');
-    var myCart = new Cart();
-    var myPos = new Pos(scanner, myCart);
+    var cart = new Cart();
+    var pos = new Pos(scanner, cart);
 
-    myPos.scan(tags);
-    PromotionProcessor.CalculatePromotion(myCart);
+    pos.scan(tags);
+    PromotionProcessor.CalculatePromotion(cart);
 
-    console.log(myPos.printReceipt());
+    console.log(pos.printReceipt());
 
 }
 
