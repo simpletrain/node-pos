@@ -16,9 +16,8 @@ Pos.prototype.scan = function (tags) {
 
 };
 
-Pos.prototype.printReceipt = function () {
-    var myReceipt = new Receipt(this.cart);
-    return myReceipt.printString;
+Pos.prototype.getReceipt = function () {
+    return receipt = new Receipt(this.cart);
 };
 
 module.exports = Pos;

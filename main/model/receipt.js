@@ -1,15 +1,8 @@
 var Utils = require('../utils.js');
 
 function Receipt(cart) {
-    this.printString =
-        '***<没钱赚商店>收据***\n' +
-        '打印时间：' + Utils.getTime() + '\n' +
-        '----------------------\n' +
-        this.getItemString(cart) +
-        '----------------------\n' +
-        '总计：' + Utils.formatPrice(this.getAmount(cart) - cart.save) + '(元)\n' +
-        '节省：' + Utils.formatPrice(cart.save) + '(元)\n' +
-        '**********************';
+    this.receiptItems = [];
+    this.totalDiscount = 0;
 }
 
 Receipt.prototype.getItemString = function (cart) {
@@ -38,6 +31,17 @@ Receipt.prototype.getAmount = function (cart) {
     });
 
     return amount;
+};
+
+Receipt.prototype.printString = function(cart){
+    return '***<没钱赚商店>收据***\n' +
+    '打印时间：' + Utils.getTime() + '\n' +
+    '----------------------\n' +
+    this.getItemString(cart) +
+    '----------------------\n' +
+    '总计：' + Utils.formatPrice(this.getAmount(cart) - cart.save) + '(元)\n' +
+    '节省：' + Utils.formatPrice(cart.save) + '(元)\n' +
+    '**********************';
 };
 
 
