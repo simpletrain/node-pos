@@ -17,7 +17,10 @@ Pos.prototype.scan = function (tags) {
 };
 
 Pos.prototype.getReceipt = function () {
-    return receipt = new Receipt(this.cart);
+    var receipt = new Receipt();
+
+    receipt.addReceiptItem(this.cart);
+    return receipt;
 };
 
 module.exports = Pos;
