@@ -13,7 +13,7 @@ Receipt.prototype.printReceipt = function () {
         this.getItemString() +
         '----------------------\n' +
         '总计：' + Utils.formatPrice(this.getActualTotalAmount()) + '(元)\n' +
-        '节省：' + Utils.formatPrice(this.getActualTotalAmount() - this.getOriginTotalAmount()) + '(元)\n' +
+        '节省：' + Utils.formatPrice(this.getOriginTotalAmount()- this.getActualTotalAmount()) + '(元)\n' +
         '**********************';
 };
 

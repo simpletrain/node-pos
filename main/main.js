@@ -11,6 +11,7 @@ function printReceipt(tags) {
     pos.scan(tags);
 
     var receipt = pos.getReceipt();
+    PromotionProcessor.CalculateItemPromotion(receipt);
 
     console.log(receipt.printReceipt());
 

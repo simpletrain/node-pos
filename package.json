@@ -4,7 +4,7 @@
   "description": "pos with nodeJS",
   "main": "index.js",
   "scripts": {
-    "test": "jasmine ./spec/test.js",
+    "test": "jasmine ./spec/main-spec.js",
     "start": "node ./main/main.js"
   },
   "devDependencies": {
