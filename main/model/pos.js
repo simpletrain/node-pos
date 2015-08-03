@@ -1,4 +1,5 @@
 var Receipt = require('./receipt.js');
+var PromotionProcessor = require('./promotion-processor.js');
 
 function Pos(scanner, cart) {
     this.scanner = scanner;
@@ -20,6 +21,8 @@ Pos.prototype.getReceipt = function () {
     var receipt = new Receipt();
 
     receipt.addReceiptItem(this.cart);
+    PromotionProcessor.CalculateItemPromotion(receipt);
+
     return receipt;
 };
 

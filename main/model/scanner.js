@@ -1,19 +1,22 @@
-var CartItem = require('./cart_item.js');
+var CartItem = require('./cart-item.js');
 var Item = require('./item.js');
 
-function Scanner(scannerType) {
-    this.type = scannerType;
+function Scanner() {
+
 }
 
 
 Scanner.prototype.scan = function (tag) {
-    if (this.type === 'barcode') {
-        var splitedBarcode = tag.split('-');
-        var barcode = splitedBarcode[0];
-        var item = Item.find(barcode);
-        var count = parseFloat(splitedBarcode[1]) || 1;
-        return new CartItem(item, count);
-    }
+    var splitedBarcode = tag.split('-');
+
+    var barcode = splitedBarcode[0];
+
+    var item = Item.find(barcode);
+
+    var count = parseFloat(splitedBarcode[1]) || 1;
+
+    return new CartItem(item, count);
+
 };
 
 module.exports = Scanner;
