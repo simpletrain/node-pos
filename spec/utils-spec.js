@@ -3,7 +3,7 @@ var Utils = require('../main/utils.js');
 
 describe('Utils',function(){
 
-    describe('#getTime()',function(){
+    describe('.getTime()',function(){
 
         it('should get right time',function(){
             var dateDigitToString = function(num) {
@@ -24,7 +24,7 @@ describe('Utils',function(){
 
     });
 
-    describe('#formatPrice()',function(){
+    describe('.formatPrice()',function(){
 
         it('should format price rightly',function(){
             var result = Utils.formatPrice(8.5);
